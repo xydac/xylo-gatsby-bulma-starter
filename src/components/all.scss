@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import '~bulma';
+
+//- Full Page Height
+#___gatsby {
+  > div {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .site-content {
+    flex: 1;
+  }
+}
