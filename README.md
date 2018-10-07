@@ -13,6 +13,10 @@
 - Sass preprocessor (with [gatsby-plugin-sass](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sass))
 - [Bulma CSS Framework](https://bulma.io/)
 
+## Demo
+
+[Check out on Netlify](https://xylo-gatsby-bulma-starter.netlify.com/)
+
 ## Dev environment
 
 Run it by :
