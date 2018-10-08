@@ -1,11 +1,10 @@
-import React from 'react'
+import { graphql, StaticQuery } from 'gatsby'
 import PropTypes from 'prop-types'
+import React from 'react'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
-
 import './all.scss'
-import Header from './header'
 import Footer from './footer'
+import Header from './header'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -14,6 +13,7 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            footerText
           }
         }
       }
@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
 
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className="site-content">{children}</div>
-        <Footer />
+        <Footer footerText={data.site.siteMetadata.footerText} />
       </>
     )}
   />

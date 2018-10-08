@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
+    footerText: 'Made with ❤ using Bulma and Gatsby',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

@@ -1,12 +1,15 @@
 import React from 'react'
+import { Hero } from 'bloomer/lib/layout/Hero/Hero'
+import { HeroBody } from 'bloomer/lib/layout/Hero/HeroBody'
+import { Container } from 'bloomer/lib/layout/Container'
 
-const Footer = () => (
-  <footer className="footer  has-background-grey-dark">
-    <div className="hero is-small">
-      <div className="hero-body has-text-centered has-text-white">
-        Made with ❤ using Bulma and Gatsby
-      </div>
-    </div>
+const Footer = ({ footerText }) => (
+  <footer id="footer">
+    <Hero isColor="black" isSize="small">
+      <HeroBody>
+        <Container>{footerText}</Container>
+      </HeroBody>
+    </Hero>
   </footer>
 )
 
